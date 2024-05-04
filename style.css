@@ -1,0 +1,212 @@
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #13182b;
+}
+
+.card{
+  position: relative;
+  background: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/0bac5bf0-0896-40a4-a2bb-3d7aa5183937/dgp963a-9b13b297-5ce6-4488-ad93-76ac5b1d68ca.jpg/v1/fit/w_800,h_1202,q_70,strp/nature_s_remedy_by_lagerdahlphoto_dgp963a-414w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTIwMiIsInBhdGgiOiJcL2ZcLzBiYWM1YmYwLTA4OTYtNDBhNC1hMmJiLTNkN2FhNTE4MzkzN1wvZGdwOTYzYS05YjEzYjI5Ny01Y2U2LTQ0ODgtYWQ5My03NmFjNWIxZDY4Y2EuanBnIiwid2lkdGgiOiI8PTgwMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.FUQtmy_GaLNBKIemAUplFN8sEn1iKNjugvX2vUCO9no');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 300px;
+  height: 450px;
+  margin: 50px;
+  border-radius: 15px;
+  box-shadow: 9px 9px #fafafa, 18px 18px rgba(0, 0, 0, .30);
+  transition: .5s ease-in-out;
+}
+
+.circle{
+  position: absolute;
+  top: 30px;
+  left: 7px;
+  width: 14px;
+  height: 14px;
+  background-color: #fafafa;
+  color: #fafafa;
+  border-radius: 50%;
+  box-shadow: 0 40px,0 80px, 0 120px, 0 160px, 0 200px, 0 240px,0 280px, 0 320px, 0 360px;
+}
+
+.line-one{
+  position: absolute;
+  top: 3px;
+  left: -20px;
+  width: 30px;
+  height: 8px;
+  border-radius: 15px;
+  background-color: #000;
+  color: #000;
+  box-shadow: 0 40px,0 80px, 0 120px, 0 160px, 0 200px, 0 240px,0 280px, 0 320px, 0 360px;
+}
+
+/* <---------------------------------------------> */
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  text-transform: uppercase;
+  overflow: hidden;
+}
+
+.notebook {
+  height: 350px;
+  width: 250px;
+  margin: 112px;
+  position: relative;
+  transition: .5s ease-in-out;
+  border-radius: 6px 17px 17px 6px;
+  display: inline-block;
+  perspective: 1200px;
+  &:hover {
+    transform: rotateZ(-20deg);
+    .notebook-front {
+    transform: rotateY(-60deg);
+    z-index: 10;
+    box-shadow: 11px 6px 14px rgba(0, 0, 0, .30);
+  }
+  }
+}
+.notebook-front {
+  height: 350px;
+  width: 250px;
+  background: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/0bac5bf0-0896-40a4-a2bb-3d7aa5183937/dgp963a-9b13b297-5ce6-4488-ad93-76ac5b1d68ca.jpg/v1/fit/w_800,h_1202,q_70,strp/nature_s_remedy_by_lagerdahlphoto_dgp963a-414w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTIwMiIsInBhdGgiOiJcL2ZcLzBiYWM1YmYwLTA4OTYtNDBhNC1hMmJiLTNkN2FhNTE4MzkzN1wvZGdwOTYzYS05YjEzYjI5Ny01Y2U2LTQ0ODgtYWQ5My03NmFjNWIxZDY4Y2EuanBnIiwid2lkdGgiOiI8PTgwMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.FUQtmy_GaLNBKIemAUplFN8sEn1iKNjugvX2vUCO9no');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  border-radius: 10px 17px 17px 10px;
+  transition: .6s linear;
+  transform-style: preserve-3d;
+  transform-origin: left center 0px;
+  z-index: 1;
+  &:before {
+    background: #101010;
+    top: -1px;
+    content: "";
+    position: absolute;
+    width: 11px;
+    height: 22em;
+    z-index: 100000;
+    border-radius: 3px;
+    right: 27px;
+  }
+}
+
+.notebook-skin {
+  height: 50px;
+  font-size: 22px;
+  color: black;
+  background: #e8e8e0;
+  text-align: left;
+  margin-top: 80px;
+  padding: 15px;
+  position: relative;
+  z-index: 10;
+  &:before {
+    width: 100%;
+    height: 15px;
+    left: 0;
+    bottom: 0;
+    content: '';
+    position: absolute;
+    background: #485247;
+  }
+}
+
+.notebook-bullet-page {
+  height: 100%;
+  width: 250px;
+  background-color: #fbfae8;
+  position: absolute;
+  border-radius: 13px 19px 19px 13px;
+  overflow: hidden;
+  z-index: 0;
+  
+  &.dotted-page {
+    background: linear-gradient(90deg, #fbfae8 10px, transparent 1%) center, linear-gradient(#fbfae8 10px, transparent 1%) center, #999;
+    background-size: 12px 12px;
+  }
+}
+
+/* <-------------------------------------------> */
+
+
+.notebook{
+  height: 350px;
+  width: 250px;
+  margin: 112px;
+  position: relative;
+  transition: .5s ease-in-out;
+  border-radius: 6px 17px 17px 6px;
+  display: inline-block;
+  perspective: 1200px;
+  &:hover {
+    transform: rotateZ(-20deg);
+    .notebook-front {
+    transform: rotateY(-60deg);
+    z-index: 10;
+    box-shadow: 11px 6px 14px rgba(0, 0, 0, .30);
+  }
+  }
+}
+
+.dark{
+  height: 350px;
+  width: 250px;
+  background: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/0bac5bf0-0896-40a4-a2bb-3d7aa5183937/dgp963a-9b13b297-5ce6-4488-ad93-76ac5b1d68ca.jpg/v1/fit/w_800,h_1202,q_70,strp/nature_s_remedy_by_lagerdahlphoto_dgp963a-414w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTIwMiIsInBhdGgiOiJcL2ZcLzBiYWM1YmYwLTA4OTYtNDBhNC1hMmJiLTNkN2FhNTE4MzkzN1wvZGdwOTYzYS05YjEzYjI5Ny01Y2U2LTQ0ODgtYWQ5My03NmFjNWIxZDY4Y2EuanBnIiwid2lkdGgiOiI8PTgwMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.FUQtmy_GaLNBKIemAUplFN8sEn1iKNjugvX2vUCO9no');
+    background-color: #101010;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  border-radius: 10px 17px 17px 10px;
+  transition: .6s linear;
+  transform-style: preserve-3d;
+  transform-origin: left center 0px;
+  z-index: 1;
+  &:before {
+    background: #f8f8f8;
+    top: -1px;
+    content: "";
+    position: absolute;
+    width: 11px;
+    height: 22em;
+    z-index: 100000;
+    border-radius: 3px;
+    right: 27px;
+  }
+}
+
+
+.notebook-skin-dark {
+  height: 50px;
+  font-size: 22px;
+  color: #fafafa;
+  background: #101010;
+  text-align: left;
+  margin-top: 80px;
+  padding: 15px;
+  position: relative;
+  z-index: 10;
+}
+
+.notebook-bullet-page {
+  height: 100%;
+  width: 250px;
+  background-color: #fbfae8;
+  position: absolute;
+  border-radius: 13px 19px 19px 13px;
+  overflow: hidden;
+  z-index: 0;
+  
+  &.dotted-page-dark {
+    background: linear-gradient(90deg, #101010 10px, transparent 1%) center, linear-gradient(#101010 10px, transparent 1%) center, #999;
+    background-size: 12px 12px;
+  }
+}
